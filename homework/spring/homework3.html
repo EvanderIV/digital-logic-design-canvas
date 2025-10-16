@@ -1,0 +1,316 @@
+<div style="max-width: 900px; margin: 20px; background-color: rgba(255, 255, 255, 0.03); border: 1px solid rgba(128, 128, 128, 0.3); border-radius: 8px;">
+    <div style="background-color: #2d3b45; color: #ffffff; padding: 20px; border-radius: 8px 8px 0 0; text-align: center;">
+        <h1 style="margin: 0; font-size: 1.8rem;">Homework #3: K-Maps In-Depth</h1>
+        <p style="margin: 5px 0 0; font-size: 1rem; color: #ccc;">EGCP 1010: Digital Logic Design</p>
+    </div>
+    <div style="padding: 20px 30px;">
+        <div id="assignment-details">
+            <h2 style="font-size: 1.6rem; color: #00569d; border-bottom: 2px solid #00569d; padding-bottom: 8px; margin-bottom: 20px;">Assignment Tasks</h2>
+            <p>Complete numbered problems from your textbook. Show work for full credit.</p>
+            <h3 style="font-size: 1.2rem; color: #00569d; margin-top: 25px;">Part 1: Karanaugh Maps</h3>
+            <div style="background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 6px; padding: 20px;">
+                <h4 style="font-size: 1.1rem; color: #00569d; margin-top: 0; margin-bottom: 15px;">Chapter 5 Problems:</h4>
+                <ul style="list-style-type: none; padding-left: 0; font-size: 1.1rem;">
+                    <li style="margin-bottom: 12px; border-left: 3px solid #00569d; padding-left: 15px;"><strong>5.3</strong></li>
+                    <li style="margin-bottom: 12px; border-left: 3px solid #00569d; padding-left: 15px;"><strong>5.14</strong></li>
+                    <li style="margin-bottom: 0; border-left: 3px solid #00569d; padding-left: 15px;"><strong>5.16</strong></li>
+                </ul>
+            </div>
+            <h3 style="font-size: 1.2rem; color: #00569d; margin-top: 25px;">Part 2: Advanced K-Maps</h3>
+            <div style="background-color: rgba(255, 255, 255, 0.05); border: 1px solid rgba(128, 128, 128, 0.2); border-radius: 6px; padding: 20px;">
+                <h4 style="font-size: 1.1rem; color: #00569d; margin-top: 0; margin-bottom: 15px;">Chapter 5 Problems:</h4>
+                <ul style="list-style-type: none; padding-left: 0; font-size: 1.1rem;">
+                    <li style="margin-bottom: 12px; border-left: 3px solid #00569d; padding-left: 15px;"><strong>5.8</strong></li>
+                    <li style="margin-bottom: 12px; border-left: 3px solid #00569d; padding-left: 15px;"><strong>5.12</strong></li>
+                    <li style="margin-bottom: 12px; border-left: 3px solid #00569d; padding-left: 15px;"><strong>5.20a-d</strong></li>
+                    <li style="margin-bottom: 12px; border-left: 3px solid #00569d; padding-left: 15px;"><strong>5.22e-g</strong></li>
+                    <li style="margin-bottom: 12px; border-left: 3px solid #00569d; padding-left: 15px;"><strong>5.27</strong></li>
+                </ul>
+            </div>
+            <div style="max-width: 900px; margin-left: auto; margin-right: auto; padding-top: 30px;">
+                <h2 style="font-size: 1.6rem; color: #00569d; border-bottom: 2px solid #00569d; padding-bottom: 8px; margin-bottom: 20px;">Copy-Paste Templates</h2>
+                <div style="display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 30px;">
+                    <div style="background-color: #ffffff; padding: 1.2rem; border-radius: 0.5rem;">
+                        <h3 style="font-size: 1.1rem; line-height: 1.75rem; margin-top: 0; margin-bottom: 1rem; text-align: center;">3-Variable Table</h3>
+                        <table style="border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">A</th>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">B</th>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">C</th>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">F</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="background-color: #ffffff; padding: 1.2rem; border-radius: 0.5rem;">
+                        <h3 style="font-size: 1.1rem; line-height: 1.75rem; margin-top: 0; margin-bottom: 1rem; text-align: center;">4-Variable Table</h3>
+                        <table style="border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">A</th>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">B</th>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">C</th>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">D</th>
+                                    <th style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; background-color: #f3f4f6; min-width: 30px; font-size: 0.9rem;">F</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                    <td style="border: 1px solid #9ca3af; text-align: center; padding: 0.3rem; height: 1.6rem;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 30px;">
+                        <div style="background-color: #ffffff; padding: 1.2rem; border-radius: 0.5rem;">
+                            <h3 style="font-size: 1.1rem; line-height: 1.75rem; margin-top: 0; margin-bottom: 1rem; text-align: center;">3-Variable K-Map</h3>
+                            <table style="border-collapse: collapse;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: none;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-top: none; border-left: none; border-right: 1px solid #9ca3af; border-bottom: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-top: none; border-left: 1px solid #9ca3af; border-right: none; border-bottom: 1px solid #9ca3af;">A</td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: none;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-left: none; border-top: none; border-right: 1px solid #9ca3af; border-bottom: none;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-right: none; border-top: none; border-left: 1px solid #9ca3af; border-bottom: 1px solid #9ca3af;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-left: none; border-top: none; border-right: 1px solid #9ca3af; border-bottom: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-right: none; border-top: 1px solid #9ca3af; border-left: 1px solid #9ca3af; border-bottom: 1px solid #9ca3af;" rowspan="2">C</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-left: none; border-top: 1px solid #9ca3af; border-right: 1px solid #9ca3af; border-bottom: none;" rowspan="2">B</td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-right: none; border-top: 1px solid #9ca3af; border-left: 1px solid #9ca3af; border-bottom: none;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background-color: #ffffff; padding: 1.2rem; border-radius: 0.5rem;">
+                            <h3 style="font-size: 1.1rem; line-height: 1.75rem; margin-top: 0; margin-bottom: 1rem; text-align: center;">4-Variable K-Map</h3>
+                            <table style="border-collapse: collapse;">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: none;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-top: none; border-left: none; border-right: 1px solid #9ca3af; border-bottom: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-top: none; border-left: 1px solid #9ca3af; border-right: none; border-bottom: 1px solid #9ca3af;" colspan="2">A</td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: none;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-left: none; border-top: none; border-right: 1px solid #9ca3af; border-bottom: none;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-right: none; border-top: none; border-left: 1px solid #9ca3af; border-bottom: 1px solid #9ca3af;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-left: none; border-top: none; border-right: 1px solid #9ca3af; border-bottom: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-right: none; border-top: 1px solid #9ca3af; border-left: 1px solid #9ca3af; border-bottom: 1px solid #9ca3af;" rowspan="2">D</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-left: none; border-top: 1px solid #9ca3af; border-right: 1px solid #9ca3af; border-bottom: none;" rowspan="2">C</td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-right: none; border-top: 1px solid #9ca3af; border-left: 1px solid #9ca3af; border-bottom: none;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: none;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-bottom: none; border-left: none; border-right: 1px solid #9ca3af; border-top: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-bottom: none; border-left: 1px solid #9ca3af; border-right: 1px solid #9ca3af; border-top: 1px solid #9ca3af;" colspan="2">B</td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border-bottom: none; border-left: 1px solid #9ca3af; border-right: none; border-top: 1px solid #9ca3af;"></td>
+                                        <td style="width: 40px; height: 40px; text-align: center; vertical-align: middle; border: none;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
