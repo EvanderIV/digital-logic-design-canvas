@@ -17,7 +17,7 @@ Follow these steps to add a template to your Canvas course page.
 3. In the Rich Content Editor toolbar, click the **HTML Editor icon** (`</>`) located in the bottom-right corner. From here, you can paste the HTML into the editor, then click "**Save**".
     - *Alternatively, you can click View > HTML Editor in the menu bar.*
 
-!(Emphasized HTML editor button)[docs/how-to-edit-html.png]
+![Emphasized HTML editor button](docs/how-to-edit-html.png)
 
 ### How to Add Your Own Content
 
