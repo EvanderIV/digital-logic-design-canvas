@@ -30,8 +30,8 @@ After you save, the page will show the rendered HTML template you pasted. The ea
 
 ### Templates Available
 
-- Syllabi *(Fall & Spring)*
-- Homework *(Fall & Spring)*
-- Quizzes
-- Exams *(Study guides included)*
-- Pre/Post Labs
+- ![Syllabi *(Fall & Spring)*](html/syllabi/)
+- ![Homework *(Fall & Spring)*](html/homework/)
+- ![Quizzes](html/quizzes/)
+- ![Exams *(Study guides included)*](html/exams/)
+- ![Pre/Post Labs](html/labs/)
