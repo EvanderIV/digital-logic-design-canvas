@@ -30,6 +30,7 @@ After you save, the page will show the rendered HTML template you pasted. The ea
 
 ### Templates Available
 
+- ![Home Page](html/homepage/homepage.html)
 - ![Syllabi *(Fall & Spring)*](html/syllabi/)
 - ![Homework *(Fall & Spring)*](html/homework/)
 - ![Quizzes](html/quizzes/)
